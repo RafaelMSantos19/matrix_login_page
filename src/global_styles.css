@@ -22,6 +22,82 @@ body {
   animation: glow 1.5s ease-in-out infinite alternate;
 }
 
+/* User Profile Styles */
+.user-profile {
+  padding: 1rem;
+  background: rgba(0, 20, 0, 0.8);
+  border-bottom: 1px solid #0F0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-image {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #0F0;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.codename {
+  color: #0F0;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 0 0 5px #0F0;
+  margin-bottom: 0.3rem;
+}
+
+.user-id {
+  color: #0F0;
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.trust-level {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9em;
+}
+
+.trust-label {
+  color: #0F0;
+  opacity: 0.8;
+}
+
+.trust-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(0, 255, 0, 0.2);
+  border-radius: 2px;
+}
+
+.trust-fill {
+  height: 100%;
+  background: #0F0;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.trust-value {
+  color: #0F0;
+  min-width: 3em;
+  text-align: right;
+}
+
 .login-container {
   position: fixed;
   top: 50%;
@@ -105,14 +181,19 @@ body {
   width: 250px;
   background: rgba(0, 0, 0, 0.9);
   border-right: 1px solid #0F0;
-  padding: 1rem;
   overflow-y: auto;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .sidebar-title {
   color: #0F0;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
   text-shadow: 0 0 5px #0F0;
   font-size: 1.2em;
 }
