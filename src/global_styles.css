@@ -193,9 +193,35 @@ body {
 .sidebar-title {
   color: #0F0;
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 1rem;
   text-shadow: 0 0 5px #0F0;
   font-size: 1.2em;
+}
+
+.search-container {
+  padding: 0 1rem 1rem;
+}
+
+.search-input {
+  width: 100%;
+  background: #000;
+  border: 1px solid #0F0;
+  color: #0F0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-family: monospace;
+  outline: none;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.search-input::placeholder {
+  color: rgba(0, 255, 0, 0.5);
 }
 
 .menu-list {
